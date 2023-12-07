@@ -10,6 +10,7 @@ nav {
   height: 5em;
   display: flex;
   justify-content: center;
+  background-color: black;
 }
 
 nav ul {
@@ -19,6 +20,8 @@ nav ul {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  padding: 0;
+  margin: 0;
   letter-spacing: 0.2em;
   text-decoration: none;
 }
@@ -26,12 +29,12 @@ nav ul {
 nav a {
   letter-spacing: 0.2em;
   text-decoration: none;
+  color: white;
 }
 
 footer {
   width: 100%;
-  border: 2px solid;
-  padding: 1em;
+  padding-top: 1em;
 }
 
 .footer-row1 {
@@ -45,7 +48,17 @@ footer {
 
 .footer-row2 {
   text-align: center;
-  margin-top: 1em;
+  margin-top: 2em;
+  color: white;
+  padding: 1em;
+  background-color: black;
+  border-radius: 0 0 20px 20px;
+}
+
+footer .container {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Home Styles */
@@ -56,4 +69,26 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  border-radius: 20px 20px 0 0;
+}
+
+.about-us .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+}
+
+.about-us p {
+  max-width: 40em;
+  margin: 5px 50px;
+  font-size: 1.2em;
 }
