@@ -10,11 +10,11 @@ body::-webkit-scrollbar {
 }
 
 nav {
-  border-bottom: 2px solid;
-  height: 5em;
+  min-height: 5em;
   display: flex;
   justify-content: center;
   background-color: black;
+  color: white;
 }
 
 nav ul {
@@ -38,6 +38,23 @@ nav a {
 
 nav a:hover {
   text-decoration: line-through;
+}
+
+nav > button {
+  display: none;
+  color: white;
+  background-color: black;
+  font-size: 1.2em;
+  width: 1.75em;
+  height: 1.75em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  transform-origin: center;
+}
+
+.rotate {
+  rotate: 90deg;
 }
 
 footer {
@@ -145,9 +162,14 @@ footer .container {
 }
 
 .gnome-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   padding: 1em;
   border-radius: 10px;
+  width: 330px;
+  height: 330px;
 }
 
 .gnome-card img {
@@ -227,6 +249,37 @@ textarea:focus {
 /* Mobile */
 
 @media screen and (max-width: 700px) {
+  /* Nav */
+
+  nav ul {
+    display: flex;
+    position: static;
+    flex-direction: column;
+    gap: 1em;
+    background-color: black;
+    padding: 1em;
+  }
+
+  nav li,
+  a {
+    background-color: black;
+  }
+
+  nav li:nth-child(1) {
+    margin-top: 5em;
+  }
+
+  nav button {
+    display: block;
+    outline: none;
+    border: 0.15em solid white;
+    border-radius: 5px;
+  }
+
+  .collapse {
+    display: none;
+  }
+
   /* Footer */
   .footer-row1 > .container {
     flex-direction: column;
@@ -249,7 +302,7 @@ textarea:focus {
 
   /* Gnomes */
   .gnomes-about p {
-    text-align: justify;
+    text-align: center;
     font-size: 1.1em;
     text-wrap: balance;
     padding: 0.5em;
