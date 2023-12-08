@@ -15,15 +15,16 @@
       src="https://kit.fontawesome.com/13e4364fd4.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <nav>
-      <ul class="">
-        <li><a href="./index.html">Home</a></li>
+      <ul id="nav-list" class="">
+        <li id="nav-top" class="nav-drop"><a href="./index.html">Home</a></li>
         <li><a href="./gnomes.html">Gnomes</a></li>
         <li><a href="./contact.html">Contact</a></li>
       </ul>
-      <button id="nav-button" class="rotate">
+      <button id="nav-button" class="" onclick="expandNav()">
         <i class="fa-solid fa-terminal"></i>
       </button>
     </nav>

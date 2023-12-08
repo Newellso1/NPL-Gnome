@@ -51,6 +51,7 @@ nav > button {
   right: 1em;
   top: 1em;
   transform-origin: center;
+  transition: rotate ease 100ms;
 }
 
 .rotate {
@@ -252,7 +253,7 @@ textarea:focus {
   /* Nav */
 
   nav ul {
-    display: flex;
+    display: none;
     position: static;
     flex-direction: column;
     gap: 1em;
@@ -265,7 +266,7 @@ textarea:focus {
     background-color: black;
   }
 
-  nav li:nth-child(1) {
+  .nav-drop {
     margin-top: 5em;
   }
 
@@ -278,6 +279,10 @@ textarea:focus {
 
   .collapse {
     display: none;
+  }
+
+  .show {
+    display: flex;
   }
 
   /* Footer */
