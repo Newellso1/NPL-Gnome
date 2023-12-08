@@ -122,10 +122,24 @@ footer .container {
 }
 
 .about-us p {
-  max-width: 95%;
-  margin: 5px 50px;
+  max-width: 60%;
+  margin: 5px 0;
   font-size: 1.2em;
   word-spacing: 0.2em;
+  line-height: 1.7em;
+}
+
+.about-paragraph1,
+.about-paragraph2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+  gap: 7em;
+}
+
+.about-us img {
+  border-radius: 10px;
 }
 
 /* Gnomes Styles */
@@ -307,11 +321,27 @@ input:-webkit-autofill:focus {
 
   /* About */
   .about-us > .container {
-    max-width: 100%;
+    width: 100vw;
+    gap: 1em;
+  }
+
+  .about-paragraph1,
+  .about-paragraph2 {
+    flex-direction: column;
+    gap: 2.5em;
+  }
+
+  .about-paragraph2 {
+    flex-direction: column-reverse;
   }
 
   .about-us p {
-    margin: 10px;
+    max-width: 100%;
+    margin: 5px 0;
+    font-size: 1.2em;
+    word-spacing: 0.1em;
+    line-height: 1.2em;
+    text-align: center;
   }
 
   /* Gnomes */
