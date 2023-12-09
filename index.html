@@ -100,7 +100,7 @@
         <p>No Place Like Gnome Established 2023</p>
       </div>
     </footer>
-    <div class="pop-up">
+    <div id="pop-up" class="pop-up">
       <div class="news-letter">
         <div class="container">
           <h3>
@@ -115,11 +115,14 @@
               placeholder="Name?"
             />
             <input
-              type="email"
+              type="text"
               id="pop-up-email"
               class="input-email"
               placeholder="Email?"
             />
+            <div id="email-check" class="valid-email">
+              Please enter a valid email
+            </div>
           </form>
           <div class="pop-up-buttons">
             <div id="tick"><i class="fa-solid fa-check"></i></div>

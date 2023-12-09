@@ -33,6 +33,22 @@ currentDay.innerHTML = `${day}'s`;
 
 // Pop up validation
 
+const popUp = document.getElementById("pop-up");
 const tick = document.getElementById("tick");
 const cross = document.getElementById("cross");
 const email = document.getElementById("pop-up-email");
+const emailCheck = document.getElementById("email-check");
+
+function closePopUp() {
+  popUp.classList.add("collapse");
+}
+
+cross.addEventListener("click", closePopUp);
+
+tick.addEventListener("click", function () {
+  if (email.value.includes("@" && ".")) {
+    closePopUp();
+  } else {
+    emailCheck.classList.add("show-email");
+  }
+});

@@ -144,6 +144,20 @@ footer .container {
   margin-top: 0.25em;
 }
 
+.valid-email {
+  display: none;
+  margin-top: 0.1em;
+  font-size: 1.2em;
+  color: red;
+  text-shadow: 0 0 1px red;
+  letter-spacing: 0.075em;
+  text-align: center;
+}
+
+.show-email {
+  display: inline;
+}
+
 .pop-up-buttons {
   display: flex;
   justify-content: center;
@@ -167,6 +181,10 @@ footer .container {
 
 .fa-x:hover {
   color: red;
+}
+
+.collapse {
+  display: none;
 }
 
 /* Home Styles */
@@ -369,10 +387,6 @@ input:-webkit-autofill:focus {
     outline: none;
     border: 0.15em solid white;
     border-radius: 5px;
-  }
-
-  .collapse {
-    display: none;
   }
 
   .show {
