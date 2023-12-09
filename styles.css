@@ -94,6 +94,81 @@ footer .container {
   padding-top: 2em;
 }
 
+/* Pop up styles */
+
+.pop-up {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  background-color: rgba(180, 231, 231, 0.616);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.news-letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 400px;
+  height: 550px;
+  border: 10px solid black;
+  text-align: center;
+}
+
+.news-letter > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  padding: 0.5em;
+  width: 90%;
+  height: 90%;
+  gap: 1em;
+}
+
+.news-letter > .container > h3 {
+  font-size: 2.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.news-letter > .container > .input-name,
+.input-email {
+  margin-top: 0.25em;
+}
+
+.pop-up-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  font-size: 2.3em;
+  margin: 1em;
+}
+
+.fa-check,
+.fa-x {
+  transition: color 100ms linear;
+}
+
+.fa-x {
+  font-size: 0.875em;
+}
+
+.fa-check:hover {
+  color: green;
+}
+
+.fa-x:hover {
+  color: red;
+}
+
 /* Home Styles */
 
 .logo-splash {

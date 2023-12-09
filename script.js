@@ -1,3 +1,4 @@
+// Nav Bar
 const navButton = document.getElementById("nav-button");
 const navTop = document.getElementById("nav-top");
 const navList = document.getElementById("nav-list");
@@ -13,3 +14,25 @@ function expandNav() {
     navList.classList.add("show");
   }
 }
+
+// Pop up
+const currentDay = document.getElementById("current-day");
+const weekdays = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday,",
+  "Saturday",
+  "Sunday",
+];
+const date = new Date();
+let day = weekdays[date.getDay() - 1];
+
+currentDay.innerHTML = `${day}'s`;
+
+// Pop up validation
+
+const tick = document.getElementById("tick");
+const cross = document.getElementById("cross");
+const email = document.getElementById("pop-up-email");
