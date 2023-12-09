@@ -40,7 +40,13 @@ const email = document.getElementById("pop-up-email");
 const emailCheck = document.getElementById("email-check");
 
 function closePopUp() {
-  popUp.classList.add("collapse");
+  setTimeout(function () {
+    popUp.classList.add("collapse");
+  }, 250);
+}
+
+function show(e) {
+  e.classList.add("show-email");
 }
 
 cross.addEventListener("click", closePopUp);
@@ -51,4 +57,8 @@ tick.addEventListener("click", function () {
   } else {
     emailCheck.classList.add("show-email");
   }
+});
+
+email.addEventListener("input", () => {
+  emailCheck.classList.remove("show-email");
 });
