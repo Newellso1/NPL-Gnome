@@ -359,6 +359,18 @@ input:-webkit-autofill:focus {
   text-shadow: 0 0 1px black;
 }
 
+.message-error {
+  color: red;
+  font-size: 1.2em;
+  text-align: center;
+  opacity: 0;
+  user-select: none;
+}
+
+.message-show {
+  opacity: 1;
+}
+
 /* Mobile */
 
 @media screen and (max-width: 700px) {

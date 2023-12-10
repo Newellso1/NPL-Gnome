@@ -68,3 +68,15 @@ tick.addEventListener("click", function () {
 email.addEventListener("input", () => {
   emailCheck.classList.remove("show-email");
 });
+
+// Message Validation
+
+const form = document.getElementById("message-form");
+
+form.addEventListener("submit", validate);
+
+function validate(e) {
+  e.preventDefault();
+  alert("test");
+  console.log("test");
+}
