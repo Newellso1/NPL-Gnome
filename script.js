@@ -27,7 +27,13 @@ const weekdays = [
   "Sunday",
 ];
 const date = new Date();
-let day = weekdays[date.getDay() - 1];
+let day;
+
+if (date.getDay() === 0) {
+  day = "Sunday";
+} else {
+  day = weekdays[date.getDay() - 1];
+}
 
 currentDay.innerHTML = `${day}'s`;
 
@@ -52,7 +58,7 @@ function show(e) {
 cross.addEventListener("click", closePopUp);
 
 tick.addEventListener("click", function () {
-  if (email.value.includes("@" && ".")) {
+  if (email.value.includes("@") && email.value.includes(".")) {
     closePopUp();
   } else {
     emailCheck.classList.add("show-email");
